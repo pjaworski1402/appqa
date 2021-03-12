@@ -13,6 +13,7 @@ import loginWave from '../../assets/images/loginWave.png'
 import userIco from '../../assets/icons/user.svg'
 import emailIco from '../../assets/icons/mail.svg'
 import passwordIco from '../../assets/icons/lock.svg'
+import blobAuthImg from '../../assets/images/blobAuth.svg'
 
 const Layout = styled.div`
     height: 100vh;
