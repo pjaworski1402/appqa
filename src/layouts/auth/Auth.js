@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
+import {motion} from 'framer-motion'
 
 import {MainTitle} from '../../components/title/Title'
 import Input from '../../components/input/Input'
@@ -17,6 +18,37 @@ import blobAuthImg from '../../assets/images/blobAuth.svg'
 
 const Layout = styled.div`
     height: 100vh;
+    @media (min-width: 920px) { 
+        width:25%;
+        height: 80vh;
+        background-color: var(--main-bright);
+        box-shadow: 0 0 10px black;
+        border-radius:10px;
+        margin: 1% auto;
+        &::before{
+            content:"";
+            position:absolute;
+            background-image: url(${blobAuthImg});
+            width:100%;
+            height:85%;
+            top:10%;
+            left:0%;
+            background-position:center;
+            background-size:contain;
+            background-repeat:no-repeat;
+            z-index:-1;
+            animation-duration: 1s;
+            animation-name: fade;
+            @keyframes fade{
+                from {
+                    transform: scale(0);
+                }
+                to {
+                    transform: scale(1);
+                }
+            }
+        }
+     }
 `;
 
 const Banner = styled.div`
@@ -24,6 +56,10 @@ const Banner = styled.div`
     height: 20%;
     display:flex;
     align-items:center;
+    @media (min-width: 920px) { 
+        background-color: transparent;
+        padding: 100px 0 0 0;
+     }
 `;
 
 const Form = styled.form`
