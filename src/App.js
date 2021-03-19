@@ -7,6 +7,7 @@ import {
 import TopNav from "./layouts/topNav/TopNav"
 import Start from "./pages/Start"
 import Auth from "./pages/Auth"
+import Panel from "./pages/Panel"
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
           </Route>
           <Route path="/auth/register">
             <Auth auth="register" />
+          </Route>
+          <Route path="/user/panel">
+            <Panel />
           </Route>
         </Switch>
     </Router>

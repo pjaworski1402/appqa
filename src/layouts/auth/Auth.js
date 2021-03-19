@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
-import {motion} from 'framer-motion'
 
 import {MainTitle} from '../../components/title/Title'
 import Input from '../../components/input/Input'
