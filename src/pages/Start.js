@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 
-import Hero from "../layouts/hero/Hero"
+import Hero from "../layouts/hero/Hero";
 
 const Start = () => {
-    return ( 
-        <>
-        <Hero />
-        </>
-     );
-}
- 
+  return (
+    <>
+      <Hero />
+    </>
+  );
+};
+
 export default Start;
