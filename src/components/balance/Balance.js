@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {useSelector} from "react-redux"
 
 const BalanceWrapper = styled.div`
   color: var(--main-bright);
@@ -21,10 +22,11 @@ const Amount = styled.span`
 `;
 
 const Balance = (props) => {
+  const balance = useSelector(state=>state.user.balance)
     return ( 
         <BalanceWrapper {...props}>
             <Text>saldo{" "}</Text>
-            <Amount>21.55 zł</Amount>
+            <Amount>{balance} zł</Amount>
         </BalanceWrapper>
      );
 }

@@ -22,7 +22,7 @@ import blobAuthImg from "../../assets/images/blobAuth.svg";
 const Layout = styled.div`
   height: 100vh;
   @media (min-width: 920px) {
-    width: 25%;
+    width: 500px;
     height: 80vh;
     background-color: var(--main-bright);
     box-shadow: 0 0 10px black;

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {useSelector} from "react-redux"
 
 import {Title} from '../../components/title/Title';
 import WaveEnd from '../../components/waveEnd/WaveEnd'
@@ -19,10 +20,11 @@ const BalanceWrapper = styled.section`
 `;
 
 const Balance = () => {
+  const username = useSelector(state=>state.user.username)
     return ( 
     <>
     <BalanceWrapper>
-        <Title style={{color:"var(--main-bright)", padding:"35px 25px", fontWeight:"var(--Regular)"}}>Witaj firek</Title>
+        <Title style={{color:"var(--main-bright)", padding:"35px 25px", fontWeight:"var(--Regular)"}}>Witaj {username}</Title>
         <BalanceComponent />
     </BalanceWrapper> 
     <WaveEnd waveImg={balanceWave} />
